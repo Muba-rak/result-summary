@@ -1,0 +1,33 @@
+
+
+
+version control- managing files and folders in app
+
+git - 
+1. keep track of our project
+2. allows to collaborate with other dev ()
+3. store our project
+
+terminal - cmd, zsh, git (bash)
+ctrl + j - windows
+cmd + j
+
+git commands
+git --version 
+github account - repository (folders of projects)
+
+configuration (email and username)
+1. git config --global user.email 'your email'
+2. git config --global user.name 'your github username'
+
+git init - initialize git
+git add . -  git add . (addding all of the files and folders)
+git commit -m "first commit"
+git branch -M main - 
+git remote add origin https://github.com/Muba-rak/result-summary.git
+git push 
+
+repo is existing 
+git add .
+git commit -m 'changed score'
+git push
