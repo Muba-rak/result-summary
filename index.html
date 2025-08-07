@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[var(--pale-blue)]">
+    <main class="md:flex justify-center items-center h-screen md:p-4">
+      <section
+        class="bg-white flex items-center rounded-2xl flex-col md:flex-row max-w-3xl h-full md:h-[62vh]"
+      >
+        <div
+          class="w-full md:w-1/2 rounded-b-2xl md:rounded-2xl bg-linear-to-b from-[var(--light-slate-blue)] to-[var(--light-royal-blue)] h-full p-8 text-center"
+        >
+          <h1 class="text-2xl text-[var(--light-lavender)]">Your Result</h1>
+          <div
+            class="rounded-full h-[150px] w-[150px] shadow-sm mx-auto my-8 bg-linear-to-b from-[var(--light-royal-blue)] to-[var(--light-slate-blue)] flex items-center justify-center"
+          >
+            <h1 class="text-[var(--pale-blue)]">
+              <span class="text-6xl font-extrabold text-white">76</span>
+              <br />
+              <br />
+              of 100
+            </h1>
+          </div>
+          <h1
+            class="font-extrabold text-4xl text-white mb-3 text-[var(--pale-blue)]"
+          >
+            Great
+          </h1>
+          <p class="text-[var(--light-lavender)] md:w-[80%] mx-auto mt-4">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 p-8 h-full">
+          <h1 class="text-2xl text-[var(--dark-gray-blue)] font-bold">
+            Summary
+          </h1>
+          <div class="flex flex-col gap-4 mt-5">
+            <div
+              class="w-full flex justify-between items-center bg-red-50 rounded-lg p-3"
+            >
+              <div class="flex gap-2 text-[var(--light-red)]">
+                <img
+                  src="assets/images/icon-reaction.svg"
+                  alt="icon-reaction"
+                />
+                <p>Reaction</p>
+              </div>
+              <h1 class="text-[var(--light-lavender)] font-bold">
+                <span class="text-[var(--dark-gray-blue)]">80</span> / 100
+              </h1>
+            </div>
+            <div
+              class="w-full flex justify-between items-center bg-yellow-50 rounded-lg p-3"
+            >
+              <div class="flex gap-2 text-[var(--orangey-yellow)]">
+                <img src="assets/images/icon-memory.svg" alt="icon-reaction" />
+                <p>Memory</p>
+              </div>
+              <h1 class="text-[var(--light-lavender)] font-bold">
+                <span class="text-[var(--dark-gray-blue)]">90</span> / 100
+              </h1>
+            </div>
+            <div
+              class="w-full flex justify-between items-center bg-green-50 rounded-lg p-3"
+            >
+              <div class="flex gap-2 text-[var(--green-teal)]">
+                <img src="assets/images/icon-verbal.svg" alt="icon-verbal" />
+                <p>Verbal</p>
+              </div>
+              <h1 class="text-[var(--light-lavender)] font-bold">
+                <span class="text-[var(--dark-gray-blue)]">61</span> / 100
+              </h1>
+            </div>
+            <div
+              class="w-full flex justify-between items-center bg-purple-50 rounded-lg p-3"
+            >
+              <div class="flex gap-2 text-[var(--cobalt-blue)]">
+                <img src="assets/images/icon-visual.svg" alt="icon-visual" />
+                <p>Visual</p>
+              </div>
+              <h1 class="text-[var(--light-lavender)] font-bold">
+                <span class="text-[var(--dark-gray-blue)]">82</span> / 100
+              </h1>
+            </div>
+          </div>
+          <button
+            class="bg-[var(--dark-gray-blue)] text-white w-full rounded-4xl block mt-4 h-[60px] font-semibold text-lg cursor-pointer hover:bg-linear-to-b from-[var(--light-slate-blue)] to-[var(--light-royal-blue)]"
+          >
+            Continue
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
